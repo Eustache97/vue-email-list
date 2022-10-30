@@ -14,7 +14,8 @@
         <h1>Le email generate sono:</h1>
         <ul>
         <li
-            v-for="(email, index) in generatedEmail">
+            v-if="generatedEmails.length === numberOfEmailToGenerate"
+            v-for="(email, index) in generatedEmails">
             {{index + 1}} {{email}} </li>
         </ul>
     </div>
